@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --background: #050505;
+    --foreground: #ffffff;
+}
+
+body {
+    color: var(--foreground);
+    background: var(--background);
+    font-feature-settings: "ss01", "ss03", "cv01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+    .glass-effect {
+        @apply bg-white/5 backdrop-blur-md border border-white/10;
+    }
+}
