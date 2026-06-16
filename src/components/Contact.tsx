@@ -13,7 +13,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70"
         >
-          Fale com a <span className="text-brand-accent">ACRUX</span>
+          Acesso Imediato à <span className="text-brand-accent">Performance</span>
         </motion.h2>
 
         <motion.div
@@ -23,8 +23,11 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="glass-effect p-8 md:p-12 rounded-lg text-left"
         >
-          <p className="text-brand-muted text-lg mb-8 text-center">
-            Tem um projeto em mente ou quer saber mais sobre nossas soluções? Entre em contato!
+          <p className="text-white text-xl font-semibold mb-2 text-center">
+            Um investimento estratégico, não um custo operacional.
+          </p>
+          <p className="text-brand-muted text-lg mb-8 text-center text-balance">
+            Consultorias de arquitetura custam milhares de reais. O **ACRUX Performance Blueprint** entrega o mesmo rigor técnico de elite por uma fração do valor, por tempo limitado.
           </p>
 
           {/* Formulário de Contato */}

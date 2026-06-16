@@ -6,22 +6,22 @@ import Image from 'next/image';
 const projects = [
   {
     id: 1,
-    title: 'Plataforma E-commerce B2B',
-    description: 'Desenvolvimento de uma plataforma robusta para transações B2B, otimizada para alta performance e escalabilidade.',
+    title: 'Core Architecture Audit',
+    description: 'Análise profunda da sua estrutura atual identificando pontos de fricção, vazamento de performance e riscos de segurança imediatos.',
     image: '/placeholder-project-1.jpg', // Adicione imagens reais na pasta public
     link: '#',
   },
   {
     id: 2,
-    title: 'Sistema de Gestão de Conteúdo (CMS)',
-    description: 'CMS customizado para gerenciamento eficiente de conteúdo digital, com foco em usabilidade e flexibilidade.',
+    title: 'Conversion-First Web Vitals',
+    description: 'Otimização cirúrgica para os índices que o Google prioriza. Mais velocidade não é apenas luxo, é posicionamento no ranking e redução de CAC.',
     image: '/placeholder-project-2.jpg', // Adicione imagens reais na pasta public
     link: '#',
   },
   {
     id: 3,
-    title: 'Aplicativo Mobile de Finanças',
-    description: 'Criação de um aplicativo móvel intuitivo para gestão financeira pessoal, com integração de APIs bancárias.',
+    title: 'Scalability Roadmap',
+    description: 'Um guia passo a passo para preparar sua infraestrutura para picos de acesso massivos sem aumento exponencial de custo.',
     image: '/placeholder-project-3.jpg', // Adicione imagens reais na pasta public
     link: '#',
   },
@@ -43,7 +43,7 @@ export default function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70"
         >
-          Nossos <span className="text-brand-accent">Projetos</span>
+          O ACRUX <span className="text-brand-accent">Blueprint</span>
         </motion.h2>
 
         <motion.div

@@ -28,7 +28,7 @@ export default function AboutUs() {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-bold mb-16 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/70"
         >
-          Sobre a <span className="text-brand-accent">ACRUX</span>
+          O Custo Invisível da <span className="text-brand-accent">Ineficiência</span>
         </motion.h2>
 
         <motion.div
@@ -39,16 +39,16 @@ export default function AboutUs() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <motion.div variants={itemVariants} className="glass-effect p-8 rounded-lg text-left">
-            <h3 className="text-xl font-semibold text-white mb-4">Nossa Missão</h3>
-            <p className="text-brand-muted">Capacitar empresas a alcançar seu potencial máximo através de soluções digitais inovadoras e estratégicas, focando em performance e escalabilidade.</p>
+            <h3 className="text-xl font-semibold text-white mb-4">O Gargalo Técnico</h3>
+            <p className="text-brand-muted">Você investe em tráfego e design, mas sua plataforma trava no momento crucial. Cada segundo de atraso é uma fatia de lucro que desaparece para o concorrente.</p>
           </motion.div>
           <motion.div variants={itemVariants} className="glass-effect p-8 rounded-lg text-left">
-            <h3 className="text-xl font-semibold text-white mb-4">Nossa Visão</h3>
-            <p className="text-brand-muted">Ser a referência em desenvolvimento de software de alta performance, reconhecida pela excelência técnica e pelo impacto positivo nos negócios de nossos clientes.</p>
+            <h3 className="text-xl font-semibold text-white mb-4">Complexidade Desnecessária</h3>
+            <p className="text-brand-muted">Sistemas inchados que impedem a agilidade. Se você tem medo de escalar porque o site "pode cair", sua tecnologia é seu maior risco.</p>
           </motion.div>
           <motion.div variants={itemVariants} className="glass-effect p-8 rounded-lg text-left">
-            <h3 className="text-xl font-semibold text-white mb-4">Nossos Valores</h3>
-            <p className="text-brand-muted">Inovação contínua, qualidade intransigente, transparência, colaboração e paixão por tecnologia.</p>
+            <h3 className="text-xl font-semibold text-white mb-4">A Falta de Clareza</h3>
+            <p className="text-brand-muted">Você recebe relatórios técnicos confusos que não explicam o porquê da baixa conversão. É hora de trocar suposições por dados de arquitetura de elite.</p>
           </motion.div>
         </motion.div>
       </div>
