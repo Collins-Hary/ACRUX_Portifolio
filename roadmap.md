@@ -22,9 +22,9 @@ Este documento detalha as etapas de desenvolvimento do portfólio da ACRUX utili
 - [x] Implementar modo escuro (Dark Mode) nativo.
 
 ## 🔴 Fase 4: SEO e Performance
-- [ ] Configurar Metadata API (Título, Descrição, OG Images).
-- [ ] Validar acessibilidade (Aria-labels e contraste).
-- [ ] Otimizar Core Web Vitals (LCP, FID, CLS).
+- [x] Configurar Metadata API (Título, Descrição, OG Images).
+- [x] Validar acessibilidade (Aria-labels e contraste).
+- [x] Otimizar Core Web Vitals (LCP, FID, CLS).
 
 ## 🚀 Fase 5: Deploy
 - [ ] Configurar Continuous Deployment (CD) na Vercel.

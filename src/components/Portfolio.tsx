@@ -61,13 +61,19 @@ export default function Portfolio() {
               whileTap={{ scale: 0.98 }}
               className="glass-effect p-6 rounded-lg text-left flex flex-col h-full"
             >
-              <div className="relative w-full h-48 bg-brand-gray rounded-md mb-4 overflow-hidden">
-                {/* Placeholder para imagem - A imagem real deve ser otimizada com next/image */}
-                <Image src={project.image} alt={project.title} fill className="rounded-md object-cover" />
+              <div className="relative w-full h-48 bg-brand-gray rounded-md mb-4 overflow-hidden aspect-video">
+                <Image 
+                  src={project.image} 
+                  alt={project.title} 
+                  fill 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="rounded-md object-cover"
+                  loading="lazy"
+                />
             </div>
               <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
               <p className="text-brand-muted flex-grow">{project.description}</p>
-              <a href={project.link} className="mt-4 text-brand-accent hover:underline font-medium self-start">
+              <a href={project.link} aria-label={`Ver detalhes do projeto ${project.title}`} className="mt-4 text-brand-accent hover:underline font-medium self-start">
                 Ver Detalhes &rarr;
               </a>
             </motion.div>
