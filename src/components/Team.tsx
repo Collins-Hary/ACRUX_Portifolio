@@ -8,7 +8,7 @@ const teamMembers = [
     name: 'Cléusio Cristóvão Hari || CEO & Co-Founder',
     role: 'desenvolvedor full-stack e Tecnico de Redes',
     bio: 'Desde os 15 anos, Cléusio ajuda a construir a base tecnológica da ACRUX. Movido por uma paixão antiga por tecnologia, ele atua no desenvolvimento das soluções e da infraestrutura que entregamos. Sua dedicação ao desenvolvimento full-stack e redes é o que nos impulsiona a buscar sempre os melhores resultados para nossos parceiros.',
-    image: '/team-member-1.JPEG', 
+    image: '/team-member-1.jpeg', // Extensão corrigida para minúsculas
   },
 //   {
 //     name: 'Nome do Integrante',

@@ -8,21 +8,21 @@ const projects = [
     id: 1,
     title: 'Core Architecture Audit',
     description: 'Análise profunda da sua arquitetura de "desenvolvimento" e "servidores", identificando pontos de fricção, otimizando a performance e mitigando riscos de segurança em "redes" complexas.',
-    image: '/placeholder-project-1.AVIF', // Adicione imagens reais na pasta public
+    image: '/placeholder-project-1.avif', // Extensão corrigida para minúsculas
     link: '#',
   },
   {
     id: 2,
     title: 'Conversion-First Web Vitals',
     description: 'Otimização cirúrgica para os índices que o Google prioriza, focando na performance de "desenvolvimento" e na entrega eficiente dos "servidores". Mais velocidade não é apenas luxo, é posicionamento no ranking e redução de CAC.',
-    image: '/placeholder-project-2.jpg',  
+    image: '/placeholder-project-2.jpg',
     link: '#',
   },
   {
     id: 3,
     title: 'Scalability Roadmap',
     description: 'Um guia passo a passo para preparar sua infraestrutura de "REDES" e "SERVIDORES" para picos de acesso massivos, garantindo escalabilidade e resiliência sem aumento exponencial de custo, com base em práticas de "DESENVOLVIMENTO" robustas.',
-    image: '/placeholder-project-3.JPEG',  
+    image: '/placeholder-project-3.jpeg', // Extensão corrigida para minúsculas
     link: '#',
   },
 ];
