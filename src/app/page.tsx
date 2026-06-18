@@ -3,7 +3,7 @@ import AboutUs from "@/components/AboutUs";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Team from "@/components/Team";
-
+ 
 export default function Home() {
   return (
     <main>

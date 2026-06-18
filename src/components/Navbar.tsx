@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             href="#contato" 
-            className="hidden sm:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-accent transition-all duration-300"
+            className="hidden md:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-accent transition-all duration-300"
           >
             CONTATO
           </Link>
@@ -70,7 +70,7 @@ export default function Navbar() {
               <Link href="#equipe" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Equipe</Link>
               <Link href="#servicos" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Serviços</Link>
               <Link href="#portfolio" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Portfólio</Link>
-              <Link href="#contato" onClick={() => setIsOpen(false)} className="sm:hidden bg-brand-accent text-brand-black w-full text-center py-3 rounded-full font-bold">CONTATO</Link>
+              <Link href="#contato" onClick={() => setIsOpen(false)} className="bg-brand-accent text-brand-black w-full text-center py-3 rounded-full font-bold">CONTATO</Link>
             </motion.div>
           )}
         </AnimatePresence>
