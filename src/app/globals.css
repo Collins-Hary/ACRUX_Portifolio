@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --background: #050505;
     --foreground: #ffffff;

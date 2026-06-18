@@ -16,10 +16,10 @@ Este documento detalha as etapas de desenvolvimento do portfólio da ACRUX utili
 - [x] **Contato**: Seção com links sociais e formulário.
 
 ## 🔵 Fase 3: Experiência do Usuário (UX)
-- [ ] Implementar scroll suave entre as seções.
-- [ ] Adicionar animações de revelação (Reveal on Scroll) com Framer Motion.
-- [ ] Otimização de imagens com `next/image`.
-- [ ] Implementar modo escuro (Dark Mode) nativo.
+- [x] Implementar scroll suave entre as seções.
+- [x] Adicionar animações de revelação (Reveal on Scroll) com Framer Motion.
+- [x] Otimização de imagens com `next/image`.
+- [x] Implementar modo escuro (Dark Mode) nativo.
 
 ## 🔴 Fase 4: SEO e Performance
 - [ ] Configurar Metadata API (Título, Descrição, OG Images).

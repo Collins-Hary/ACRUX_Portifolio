@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: 'Core Architecture Audit',
     description: 'Análise profunda da sua estrutura atual identificando pontos de fricção, vazamento de performance e riscos de segurança imediatos.',
-    image: '/placeholder-project-1.jpg', // Adicione imagens reais na pasta public
+    image: '/placeholder-project-1.AVIF', // Adicione imagens reais na pasta public
     link: '#',
   },
   {
@@ -22,7 +22,7 @@ const projects = [
     id: 3,
     title: 'Scalability Roadmap',
     description: 'Um guia passo a passo para preparar sua infraestrutura para picos de acesso massivos sem aumento exponencial de custo.',
-    image: '/placeholder-project-3.jpg', // Adicione imagens reais na pasta public
+    image: '/placeholder-project-3.JPEG', // Adicione imagens reais na pasta public
     link: '#',
   },
 ];
@@ -62,9 +62,9 @@ export default function Portfolio() {
               className="glass-effect p-6 rounded-lg text-left flex flex-col h-full"
             >
               <div className="relative w-full h-48 bg-brand-gray rounded-md mb-4 overflow-hidden">
-                {/* Placeholder para imagem */}
-                <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" className="rounded-md" />
-              </div>
+                {/* Placeholder para imagem - A imagem real deve ser otimizada com next/image */}
+                <Image src={project.image} alt={project.title} fill className="rounded-md object-cover" />
+            </div>
               <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
               <p className="text-brand-muted flex-grow">{project.description}</p>
               <a href={project.link} className="mt-4 text-brand-accent hover:underline font-medium self-start">

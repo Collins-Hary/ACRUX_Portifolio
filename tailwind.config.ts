@@ -16,8 +16,8 @@ const config: Config = {
           accent: "#00F0FF", // Ciano tecnológico
           muted: "#A1A1AA",
         },
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#050505",
+        foreground: "#ffffff",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -27,6 +27,5 @@ const config: Config = {
     },
   },
   plugins: [],
-  darkMode: 'class',
 };
 export default config;

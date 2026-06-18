@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark py-12 md:py-16 border-t border-white/10">
+    <footer className="bg-background py-12 md:py-16 border-t border-foreground/10">
       <div className="container mx-auto px-6 flex flex-col items-center text-center">
         {/* Logo */}
         <Link href="/" className="mb-8 hover:opacity-80 transition-opacity">
@@ -17,11 +17,11 @@ export default function Footer() {
         </Link>
 
         {/* Links de Navegação */}
-        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium uppercase tracking-widest text-brand-muted mb-8">
-          <Link href="#sobre" className="hover:text-white transition-colors">Sobre</Link>
-          <Link href="#servicos" className="hover:text-white transition-colors">Serviços</Link>
-          <Link href="#portfolio" className="hover:text-white transition-colors">Portfólio</Link>
-          <Link href="#contato" className="hover:text-white transition-colors">Contato</Link>
+        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium uppercase tracking-widest text-muted mb-8">
+          <Link href="#sobre" className="hover:text-foreground transition-colors">Sobre</Link>
+          <Link href="#servicos" className="hover:text-foreground transition-colors">Serviços</Link>
+          <Link href="#portfolio" className="hover:text-foreground transition-colors">Portfólio</Link>
+          <Link href="#contato" className="hover:text-foreground transition-colors">Contato</Link>
         </nav>
 
         {/* Redes Sociais (placeholders) */}
@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <p className="text-brand-muted text-xs md:text-sm">
+        <p className="text-muted text-xs md:text-sm">
           &copy; {new Date().getFullYear()} ACRUX. Todos os direitos reservados.
         </p>
       </div>
