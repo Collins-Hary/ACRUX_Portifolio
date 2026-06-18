@@ -16,6 +16,10 @@ export default function Footer() {
           />
         </Link>
 
+ <p className="text-brand-muted text-md max-w-xl mx-auto mb-10 leading-relaxed">
+          ACRUX: Guiamos quem vai além. Especialistas em Desenvolvimento, Redes e Servidores, transformando visões em realidade digital de alta performance.
+        </p>
+        
         {/* Redes Sociais (placeholders) */}
         <div className="flex gap-6 mb-8">
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-brand-muted hover:text-brand-accent transition-colors">
