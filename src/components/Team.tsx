@@ -55,7 +55,7 @@ export default function Team() {
           >
             <div className="absolute inset-0 bg-brand-accent/5 z-10" />
             <Image 
-              src="/acrux_logo.PNG" 
+              src="/acrux_logo.png" 
               alt="Equipe ACRUX em operação" 
               fill 
               className="object-cover"
