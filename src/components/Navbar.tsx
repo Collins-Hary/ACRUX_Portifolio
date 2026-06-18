@@ -28,6 +28,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-brand-muted">
           <Link href="#sobre" className="hover:text-white transition-colors">Sobre</Link>
+          <Link href="#equipe" className="hover:text-white transition-colors">Equipe</Link>
           <Link href="#servicos" className="hover:text-white transition-colors">Serviços</Link>
           <Link href="#portfolio" className="hover:text-white transition-colors">Portfólio</Link>
         </div>
@@ -35,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center gap-4">
           <Link 
             href="#contato" 
-            className="hidden sm:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-accent transition-all duration-300"
+            className="hidden md:block bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-brand-accent transition-all duration-300"
           >
             CONTATO
           </Link>
@@ -66,9 +67,10 @@ export default function Navbar() {
               className="absolute top-20 left-0 right-0 glass-effect rounded-3xl p-8 flex flex-col items-center gap-6 md:hidden z-40"
             >
               <Link href="#sobre" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Sobre</Link>
+              <Link href="#equipe" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Equipe</Link>
               <Link href="#servicos" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Serviços</Link>
               <Link href="#portfolio" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Portfólio</Link>
-              <Link href="#contato" onClick={() => setIsOpen(false)} className="sm:hidden bg-brand-accent text-brand-black w-full text-center py-3 rounded-full font-bold">CONTATO</Link>
+              <Link href="#contato" onClick={() => setIsOpen(false)} className="bg-brand-accent text-brand-black w-full text-center py-3 rounded-full font-bold">CONTATO</Link>
             </motion.div>
           )}
         </AnimatePresence>

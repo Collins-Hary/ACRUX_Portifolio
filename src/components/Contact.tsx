@@ -1,8 +1,22 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { sendEmail } from './sendEmail'; // Caminho corrigido
 
 export default function Contact() {
+  const [status, setStatus] = useState<{ success?: string; error?: string } | null>(null);
+  const [isPending, setIsPending] = useState(false);
+
+  async function handleAction(formData: FormData) {
+    setIsPending(true);
+    setStatus(null);
+    
+    const result = await sendEmail(formData);
+    setStatus(result);
+    setIsPending(false);
+  }
+
   return (
     <section id="contato" className="py-20 md:py-32 bg-brand-dark">
       <div className="container mx-auto px-6 text-center max-w-3xl">
@@ -27,25 +41,33 @@ export default function Contact() {
             Um investimento estratégico, não um custo operacional.
           </p>
           <p className="text-brand-muted text-lg mb-8 text-center text-balance">
-            Consultorias de arquitetura custam milhares de reais. O **ACRUX Performance Blueprint** entrega o mesmo rigor técnico de elite por uma fração do valor, por tempo limitado.
+            Consultorias de arquitetura custam milhares de Kwanzas. O "ACRUX Performance Blueprint" entrega o mesmo rigor técnico de elite por uma fração do valor, por tempo limitado.
           </p>
 
           {/* Formulário de Contato */}
-          <form className="space-y-6">
+          <form action={handleAction} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-brand-muted text-sm font-bold mb-2">Nome</label>
-              <input type="text" id="name" name="name" className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" />
+              <input type="text" id="name" name="name" required className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" />
             </div>
             <div>
               <label htmlFor="email" className="block text-brand-muted text-sm font-bold mb-2">Email</label>
-              <input type="email" id="email" name="email" className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" />
+              <input type="email" id="email" name="email" required className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" />
             </div>
             <div>
               <label htmlFor="message" className="block text-brand-muted text-sm font-bold mb-2">Mensagem</label>
-              <textarea id="message" name="message" rows={5} className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
+              <textarea id="message" name="message" rows={5} required className="w-full p-3 bg-brand-gray border border-white/10 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-brand-accent"></textarea>
             </div>
-            <button type="submit" className="w-full bg-brand-accent text-brand-black px-6 py-3 rounded-md font-bold hover:bg-white transition-colors duration-300">
-              ENVIAR MENSAGEM
+
+            {status?.success && <p className="text-green-400 text-sm font-medium">{status.success}</p>}
+            {status?.error && <p className="text-red-400 text-sm font-medium">{status.error}</p>}
+
+            <button 
+              type="submit" 
+              disabled={isPending}
+              className="w-full bg-brand-accent text-brand-black px-6 py-3 rounded-md font-bold hover:bg-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isPending ? 'ENVIANDO...' : 'ENVIAR MENSAGEM'}
             </button>
           </form>
 

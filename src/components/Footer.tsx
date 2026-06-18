@@ -16,14 +16,10 @@ export default function Footer() {
           />
         </Link>
 
-        {/* Links de Navegação */}
-        <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium uppercase tracking-widest text-muted mb-8">
-          <Link href="#sobre" className="hover:text-foreground transition-colors">Sobre</Link>
-          <Link href="#servicos" className="hover:text-foreground transition-colors">Serviços</Link>
-          <Link href="#portfolio" className="hover:text-foreground transition-colors">Portfólio</Link>
-          <Link href="#contato" className="hover:text-foreground transition-colors">Contato</Link>
-        </nav>
-
+ <p className="text-brand-muted text-md max-w-xl mx-auto mb-10 leading-relaxed">
+          ACRUX: Guiamos quem vai além. Especialistas em Desenvolvimento, Redes e Servidores, transformando visões em realidade digital de alta performance.
+        </p>
+        
         {/* Redes Sociais (placeholders) */}
         <div className="flex gap-6 mb-8">
           <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-brand-muted hover:text-brand-accent transition-colors">
