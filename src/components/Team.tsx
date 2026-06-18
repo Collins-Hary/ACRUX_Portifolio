@@ -26,7 +26,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <section id="equipe" className="py-20 md:py-32 bg-brand-dark overflow-hidden">
+    <section id="equipe" className="py-20 md:py-32 bg-brand-black overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-24">
           <motion.div 

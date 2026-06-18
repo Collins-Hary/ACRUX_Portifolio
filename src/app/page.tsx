@@ -3,6 +3,7 @@ import AboutUs from "@/components/AboutUs";
 import Portfolio from "@/components/Portfolio";
 import Contact from "@/components/Contact";
 import Team from "@/components/Team";
+import Services from "@/components/Services";
  
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Team />
+      <Services />
       <Portfolio />
       <Contact />
     </main>

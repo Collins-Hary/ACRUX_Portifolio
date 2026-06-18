@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function Hero() {
@@ -26,12 +27,16 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-brand-accent transition-all duration-300 w-full md:w-auto">
-              VER PROJETOS
-            </button>
-            <button className="px-8 py-4 border border-white/10 glass-effect text-white font-bold rounded-full hover:border-brand-accent transition-all duration-300 w-full md:w-auto">
-              NOSSA VISÃO
-            </button>
+            <Link href="#portfolio" passHref>
+              <button className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-brand-accent transition-all duration-300 w-full md:w-auto">
+                VER PROJETOS
+              </button>
+            </Link>
+            <Link href="#sobre" passHref>
+              <button className="px-8 py-4 border border-white/10 glass-effect text-white font-bold rounded-full hover:border-brand-accent transition-all duration-300 w-full md:w-auto">
+                NOSSA VISÃO
+              </button>
+            </Link>
           </div>
         </motion.div>
       </div>
