@@ -27,7 +27,7 @@ export default function Contact() {
             Um investimento estratégico, não um custo operacional.
           </p>
           <p className="text-brand-muted text-lg mb-8 text-center text-balance">
-            Consultorias de arquitetura custam milhares de reais. O **ACRUX Performance Blueprint** entrega o mesmo rigor técnico de elite por uma fração do valor, por tempo limitado.
+            Consultorias de arquitetura custam milhares de Kwanzas. O "ACRUX Performance Blueprint" entrega o mesmo rigor técnico de elite por uma fração do valor, por tempo limitado.
           </p>
 
           {/* Formulário de Contato */}
