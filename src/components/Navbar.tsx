@@ -64,7 +64,7 @@ export default function Navbar() {
               initial={{ opacity: 0, y: -20, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -20, scale: 0.95 }}
-              className="absolute top-20 left-0 right-0 glass-effect rounded-3xl p-8 flex flex-col items-center gap-6 md:hidden z-40"
+              className="absolute top-20 left-0 right-0 bg-brand-black/95 backdrop-blur-lg border border-white/10 shadow-2xl rounded-3xl p-8 flex flex-col items-center gap-6 md:hidden z-40"
             >
               <Link href="#sobre" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Sobre</Link>
               <Link href="#equipe" onClick={() => setIsOpen(false)} className="text-white text-lg font-medium uppercase tracking-widest hover:text-brand-accent transition-colors">Equipe</Link>
